@@ -1,5 +1,5 @@
-import 'package:architecture_project/core/injection/env.dart';
-import 'package:architecture_project/main.dart';
+import 'package:pos_resto/core/injection/env.dart';
+import 'package:pos_resto/main.dart';
 
 class Injection {
   static const String fontFamily = 'Inter';

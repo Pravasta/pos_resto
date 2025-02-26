@@ -1,4 +1,4 @@
-# architecture_project
+# pos_resto
 
 A new Flutter project.
 
