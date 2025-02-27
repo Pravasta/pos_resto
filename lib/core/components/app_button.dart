@@ -8,12 +8,12 @@ class DefaultButton extends StatelessWidget {
     required this.title,
     this.titleColor = AppColor.white,
     this.width = double.infinity,
-    this.height = 0,
+    this.height = 60,
     this.padding = 15,
     this.backgroundColor,
-    this.borderColor = AppColor.accent,
+    this.borderColor = AppColor.blue,
     required this.onTap,
-    this.elevation = 3,
+    this.elevation = 0,
     this.iconUrl,
     this.borderRadius = 10,
   });
@@ -36,7 +36,7 @@ class DefaultButton extends StatelessWidget {
         elevation: elevation,
         minimumSize: Size(width, height),
         shape: RoundedRectangleBorder(
-          side: BorderSide(color: borderColor),
+          side: BorderSide(color: borderColor, width: 2),
           borderRadius: BorderRadius.circular(borderRadius),
         ),
         backgroundColor: backgroundColor,
@@ -49,10 +49,22 @@ class DefaultButton extends StatelessWidget {
                 children: [
                   Image.asset(iconUrl!, width: 20),
                   const SizedBox(width: 10),
-                  Text(title, style: appTextTheme(context).bodyMedium),
+                  Text(
+                    title,
+                    style: appTextTheme(context).bodyMedium!.copyWith(
+                      color: titleColor,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ],
               )
-              : Text(title, style: appTextTheme(context).bodyMedium),
+              : Text(
+                title,
+                style: appTextTheme(context).bodyMedium!.copyWith(
+                  color: titleColor,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
     );
   }
 }

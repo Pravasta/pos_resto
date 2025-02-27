@@ -11,11 +11,11 @@ final _borderStyle = OutlineInputBorder(
 
 const _onFocusedBorderStyle = OutlineInputBorder(
   borderRadius: BorderRadius.all(Radius.circular(10)),
-  borderSide: BorderSide(color: AppColor.primary),
+  borderSide: BorderSide(color: AppColor.blue),
 );
 
 const _onFocusedUnderlineBorder = UnderlineInputBorder(
-  borderSide: BorderSide(width: 1, color: AppColor.primary),
+  borderSide: BorderSide(width: 1, color: AppColor.blue),
 );
 
 const _roundedBorder = OutlineInputBorder(
@@ -234,6 +234,7 @@ class AppValidatorTextField extends StatelessWidget {
               const SizedBox(height: 24.0),
             ],
           ),
+        SizedBox(height: 10),
         TextFormField(
           onTap: onTap,
           autovalidateMode: autoValidateMode,
@@ -242,7 +243,7 @@ class AppValidatorTextField extends StatelessWidget {
           controller: controller,
           onChanged: onChanged ?? (value) {},
           textAlign: _textAlign,
-          cursorColor: AppColor.primary,
+          cursorColor: AppColor.blue,
           initialValue: initialText,
           keyboardType: inputType,
           obscureText: isObscure,
@@ -253,7 +254,7 @@ class AppValidatorTextField extends StatelessWidget {
           ),
           onFieldSubmitted: onFieldSubmitted,
           decoration: InputDecoration(
-            focusColor: AppColor.primary,
+            focusColor: AppColor.blue,
             filled: true,
             fillColor: fillColor,
             hintText: hintText,
@@ -274,7 +275,7 @@ class AppValidatorTextField extends StatelessWidget {
             prefixText: prefixText,
             suffixIcon: suffixWidget,
             suffixIconConstraints: suffixConstraints,
-            suffixIconColor: AppColor.primary,
+            suffixIconColor: AppColor.blue,
             prefixIcon: prefixIcon,
             errorStyle:
                 overrideErrorStyle ??

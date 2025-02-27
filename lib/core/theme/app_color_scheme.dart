@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class ApptColorScheme {
   static const light = ColorScheme(
     brightness: Brightness.light,
-    primary: AppColor.primary,
+    primary: AppColor.blue,
     onPrimary: AppColor.white,
     // primaryContainer: Color(0xFFF0DBFF),
     // onPrimaryContainer: Color(0xFF2C0051),
@@ -20,8 +20,8 @@ class ApptColorScheme {
     onError: Colors.red,
     // errorContainer: Color(0xFFFFDAD6),
     // onErrorContainer: Color(0xFF410002),
-    outline: AppColor.primary,
-    outlineVariant: AppColor.primary,
+    outline: AppColor.blue,
+    outlineVariant: AppColor.blue,
     surface: Color(0xFFFEF7FC),
     onSurface: Color(0xFF1D1B1E),
     // onSurfaceVariant: Color(0xFF4A454E),

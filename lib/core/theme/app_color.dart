@@ -14,6 +14,19 @@ class AppColor {
     900: Color(0xFF111827),
   });
 
+  static const blue = MaterialColor(0xFF1A72DD, <int, Color>{
+    50: Color(0xFFE6F0FF),
+    100: Color(0xFFB3D3FF),
+    200: Color(0xFF80B6FF),
+    300: Color(0xFF4D99FF),
+    400: Color(0xFF267FFF),
+    500: Color(0xFF1A72DD),
+    600: Color(0xFF1667C4),
+    700: Color(0xFF1158A6),
+    800: Color(0xFF0D4A88),
+    900: Color(0xFF08316B),
+  });
+
   static const accent = MaterialColor(0xFFFFA41B, <int, Color>{
     50: Color(0xFFFFF6E8),
     100: Color(0xFFFFEDD1),

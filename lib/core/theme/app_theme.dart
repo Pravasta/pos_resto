@@ -8,13 +8,13 @@ class AppTheme {
   static ThemeData lightTheme(BuildContext context) {
     return ThemeData(
       textTheme: AppTextStyle.lightTextTheme,
-      primaryColor: AppColor.primary,
+      primaryColor: AppColor.white,
       colorScheme: ApptColorScheme.light,
       scaffoldBackgroundColor: AppColor.black[50],
       appBarTheme: const AppBarTheme(
         systemOverlayStyle: SystemUiOverlayStyle(
           // Status bar color
-          statusBarColor: AppColor.primary,
+          statusBarColor: AppColor.white,
           // Status bar brightness (optional)
           statusBarIconBrightness: Brightness.light, // For Android (dark icons)
           statusBarBrightness: Brightness.light, // For iOS (dark icons)
@@ -27,13 +27,13 @@ class AppTheme {
   static ThemeData darkTheme(BuildContext context) {
     return ThemeData(
       textTheme: AppTextStyle.darkTextTheme,
-      primaryColor: AppColor.primary,
+      primaryColor: AppColor.black,
       colorScheme: ApptColorScheme.dark,
-      scaffoldBackgroundColor: AppColor.primary,
+      scaffoldBackgroundColor: AppColor.black,
       appBarTheme: const AppBarTheme(
         systemOverlayStyle: SystemUiOverlayStyle(
           // Status bar color
-          statusBarColor: AppColor.primary,
+          statusBarColor: AppColor.black,
           // Status bar brightness (optional)
           statusBarIconBrightness: Brightness.light, // For Android (dark icons)
           statusBarBrightness: Brightness.light, // For iOS (dark icons)
